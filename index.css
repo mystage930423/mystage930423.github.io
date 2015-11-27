@@ -1,3 +1,4 @@
 
  * {margin: 0;padding: 0;}
-.box { margin-top: 300px; margin: auto; width: 200px; height: 200px; border-radius:100px ; box-shadow: 0 0 10px;text-align:center;}
+.box a {display:block; margin-top: 300px; margin: auto; width: 200px; height: 200px;
+border-radius:100px ; box-shadow: 0 0 10px;text-align:center; font-family:arial; font-size:20px;}
