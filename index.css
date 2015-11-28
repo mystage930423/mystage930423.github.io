@@ -1,4 +1,20 @@
 
- * {margin: 0;padding: 0;}
-a {display:block; margin:300px auto; width: 200px; height: 200px; text-decoration:none; color:#000;
-border-radius:100px ; box-shadow: 0 0 10px;text-align:center; font-family:arial; font-size:32px; line-height:200px;}
+*{margin: 0; padding: 0;}
+
+.clearfix:before,.clear:after{display: table; content:"";}
+.clear:after{clear: both;}
+.clearfix{zoom:1;}
+
+/*-----public-----*/
+body {background-color: #e6e6e6;}
+
+
+/*-----header------*/
+header {height: 70px;}
+.header-inner {width: 1000px; margin: 0 auto;}
+
+
+/*-----banner-----*/
+.banner {background-color: #222; height: 500px;}
+.banner-inner {width: 1000px;margin: 0 auto;}
+img {display: block; margin: 75px 50px;}
