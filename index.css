@@ -5,17 +5,54 @@
 .clear:after{clear: both;}
 .clearfix{zoom:1;}
 
+
+
 /*-----public-----*/
 body {background-color: #e6e6e6;}
 
 
+
 /*-----header------*/
-header {height: 70px;}
-.header-inner {width: 1000px; margin: 0 auto;}
-nav {float: right;width: 76px;height: 60px; margin: 10px;}
+.header-inner {
+	width: 1000px; 
+	margin: 0 auto;
+}
+.logo {
+	float: left;
+}
+nav {
+	float: right;
+	width: 76px;
+	height: 60px; 
+	margin: 10px 100px;
+}
+nav a {
+	display: block;
+}
+nav a:hover {
+	background-image: url(home_bg.png);
+}
+
 
 
 /*-----banner-----*/
-.banner {background-color: #222; height: 500px;}
-.banner-inner {width: 1000px;margin: 0 auto;}
-img {display: block; margin: 75px 50px;}
+.banner { 
+	background-color: #222;
+	clear: both;
+}
+.banner-inner {
+	width: 1000px;
+	margin: 0 auto;
+}
+.banner-inner img {
+	display: block;
+	margin: 20px 50px;
+	padding-bottom: 80px;
+}
+
+
+
+/*-----main-----*/
+.main {
+	clear: both;
+}
