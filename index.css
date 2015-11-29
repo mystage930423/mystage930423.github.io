@@ -20,17 +20,24 @@ body {background-color: #e6e6e6;}
 .logo {
 	float: left;
 }
-nav {
+nav{
+	margin-right: 90px;
+}
+nav li {
 	float: right;
 	width: 76px;
 	height: 60px; 
-	margin: 10px 100px;
+	margin: 10px;
+	list-style: none;
 }
-nav a {
+nav li a {
 	display: block;
 }
-nav a:hover {
-	background-image: url(home_bg.png);
+nav li .bai:hover {
+	background: url(images/bai_bg.png) no-repeat;
+}
+nav li .home:hover {
+	background: url(images/home_bg.png);
 }
 
 
