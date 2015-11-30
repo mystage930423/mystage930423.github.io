@@ -3,26 +3,70 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>1st day:box-shadow</title>
+	<link rel="stylesheet" href="../../public.css">
 <style>
-	.box {box-shadow: 0 0 10px gray;
+
+	.banner {
+		height: 30px;
+		background-color: #222;
+		clear: both;
+	}
+	.main {
+		clear: both;
+		background-color: #fff;
+	}
+	.main-inner {
+		margin: 0 auto;
+		width: 1000px;
+	}
+	.first {
+		margin: 0 auto;
+		width: 500px;
+		padding: 100px;
+	}
+	.first h1 {
+		font-size: 24px;
+		text-align: center;
+		margin: 30px 0;
+	}
+	.box {
+		box-shadow: 0 0 10px gray;
 		background-color: #fff; 
 		margin: auto; 
 		width: 200px; 
 		height: 200px;
-		border-radius: 100px;}
-	a {display:block; 
-	   	color:#ccc;
-	   	font-size:32px; font-family:"微软雅黑";
-	   	width:100px; line-height:50px; 
-	   	text-decoration:none; text-align:center;
-	   	border:1px solid #aaa; border-radius:5px; }
+	}
 </style>
 </head>
 <body>
-
-  <div class="box"></div>
-  <a href="/100days">返回</a>
+		<header>
+			<div class="header-inner">
+				<div class="logo">
+					<img src="" alt="">
+				</div>
+				<nav>
+					<ul>
+						<li><a class="home" href="/"><img src="../../images/home.png" alt="home"></a></li>
+						<li><a class="bai" href="/100days"><img src="../../images/bai.png" alt="百日百页面"></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="banner clearfix"></div>
+		<div class="main clearfix">
+			<div class="main-inner clearfix">
+				<div class="first">
+					<h1>box-shadow示例</h1>
+					  <div class="box"></div>
+				</div>
+			</div>
+		</div>
+		<footer class="clearfix">
+			<div class="footer-inner">
+				<p>design by <a href="">mystage930423.github.io</a></p>
+			</div>
+		</footer>
 
 </body>
 </html>

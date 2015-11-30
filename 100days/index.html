@@ -2,16 +2,78 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>100days</title>
-	<style>
-		.home a {clear:both; box-shadow: inset 0 0 20px #238574;}
-		a {display: block; width: 100px;height: 40px;border: 1px solid #ccc; float: left; margin-left: 100px; margin-top: 150px; font-family: arial; color: #000; text-decoration: none; line-height: 40px; font-size: 24px; text-align: center; border-radius: 10px; box-shadow: inset 0 0 20px #aaa; }
+	<title>百日百页面</title>
+	<link rel="stylesheet" href="../public.css">
+<style>
+	.banner {
+		height: 30px;
+		background-color: #222;
+		clear: both;
+	}
+	.main {
+		clear: both;
+		background-color: #fff;
+	}
+	.main-inner {
+		margin: 0 auto;
+		width: 1000px;
+	}
+	.list {
+		width: 500px;
+		padding: 100px;
+	}
+	.list h1{
+		margin: 30px 0;
+	}
+	.main-inner a {
+		color: #000;
+		font-family: arial;
+		font-size: 14px;		
+	}
+	.main-inner a:hover {
+		color: #f00;
+	}
+	.main-inner li {
+		list-style: none;
+		margin-bottom: 12px;
+		padding-left: 20px;
+		background: url(../images/list.png) no-repeat;
+	}
+
 	</style>
 </head>
 <body>
-	<p class="home"><a href="/">HOME</a></p>
-	<a href="1st">1st</a>
-	<a href="2nd">2nd</a>
-
+		<header>
+			<div class="header-inner">
+				<div class="logo">
+					<img src="" alt="">
+				</div>
+				<nav>
+					<ul>
+						<li><a class="home" href="/"><img src="../images/home.png" alt="home"></a></li>
+						<li><a class="bai" href="/100days"><img src="../images/bai.png" alt="百日百页面"></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="banner clearfix"></div>
+		<div class="main clearfix">
+			<div class="main-inner clearfix">
+				<div class="list">
+					<h1>代码如画笔·百日百页面</h1>
+					<ul>
+						<li><a href="1st">1st day:box-shadow</a></li>
+						<li><a href="2nd">2nd day:border-radius</a></li>
+						<li><a href="3rd">3rd day:transition & hover</a></li>
+						<li><a href="4th">4th day:position & hover</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer class="clearfix">
+			<div class="footer-inner">
+				<p>design by <a href="">mystage930423.github.io</a></p>
+			</div>
+		</footer>
 </body>
 </html>
