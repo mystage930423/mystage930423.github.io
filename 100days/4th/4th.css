@@ -38,6 +38,7 @@
 	.fourth a {
     margin: 0 auto;
     display:block;
+    background:#fff;
   	width: 200px; 
     height: 100px; 
   	text-decoration:none;
