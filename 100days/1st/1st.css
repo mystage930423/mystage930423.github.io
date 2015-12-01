@@ -1,0 +1,42 @@
+
+	.banner {
+		height: 30px;
+		background-color: #222;
+		clear: both;
+	}
+	.main {
+		clear: both;
+		background-color: #fff;
+	}
+	.main-inner {
+		margin: 0 auto;
+		width: 1000px;
+	}
+
+    /*因为first盒子浮动造成main高度不能自适应，解决不掉*/
+
+	.first {
+		float: left;
+		width: 440px;
+		padding: 30px;
+	}
+	.first h1 {
+		font-size: 24px;
+		margin: 30px 0;
+	}
+	.first .center {
+		text-align: center;
+	}
+	.first p {
+		padding: 15px;
+		width: 300px;
+		background-color: #222;
+		color: #eee;
+	}
+	.box {
+		box-shadow: 0 0 15px black;
+		background-color: #fff; 
+		margin: auto; 
+		width: 200px; 
+		height: 200px;
+	}

@@ -47,10 +47,24 @@ nav li .home:hover {
 	background: url(images/home_bg.png);
 }
 
+
+
+/*-----main-----*/
+.main {
+	clear: both;
+}
+.main-inner {
+	clear: both;
+}
+
+
+
+/*-----footer-----*/
 footer {
 	clear: both;
 }
 .footer-inner {
+	clear: both;
 	width: 1000px;
 	margin: 0 auto;
 	text-align: center;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4th day:transition (2)</title>
+  <link rel="stylesheet" href="../../public.css"> 
+  <link rel="stylesheet" href="4th.css">
+</head>
+<body>
+        <header>
+      <div class="header-inner">
+        <div class="logo">
+          <img src="" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li><a class="home" href="/"><img src="../../images/home.png" alt="home"></a></li>
+            <li><a class="bai" href="/100days"><img src="../../images/bai.png" alt="百日百页面"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner clearfix"></div>
+    <div class="main clearfix">
+      <div class="main-inner clearfix">
+        <div class="fourth">
+          <h1 class="center">过渡效果②示例：</h1>
+          <h1 class="size">(鼠标经过按钮，阴影加深&变色)</h1>
+            <a href="#">会动</a>
+        </div>
+        <div class="fourth">
+          <h1>css代码如下：</h1>
+          <p>
+            .fourth a {<br>
+            &nbsp;&nbsp;display:block;<br>
+            &nbsp;&nbsp;width: 200px; <br>
+            &nbsp;&nbsp;height: 100px; <br>
+            &nbsp;&nbsp;text-decoration:none;<br>
+            &nbsp;&nbsp;text-align:center;<br>
+            &nbsp;&nbsp;color:#000;<br>
+            &nbsp;&nbsp;font-family: "幼圆";<br>
+            &nbsp;&nbsp;font-size:48px;<br>
+            &nbsp;&nbsp;line-height:100px;<br>
+            &nbsp;&nbsp;border-radius:20px;<br>
+            &nbsp;&nbsp;box-shadow: 0 0 12px;<br>
+            &nbsp;&nbsp;transition: box-shadow 1s Aqua;<br>
+            }
+          </p>
+          <p>
+            .fourth a:hover {<br>
+            &nbsp;&nbsp;box-shadow: 0 0 30px DarkBlue;<br>
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="clearfix">
+      <div class="footer-inner">
+        <p>design by <a href="">mystage930423.github.io</a></p>
+      </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+

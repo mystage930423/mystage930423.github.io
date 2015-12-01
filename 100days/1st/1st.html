@@ -5,39 +5,7 @@
 	<meta charset="UTF-8">
 	<title>1st day:box-shadow</title>
 	<link rel="stylesheet" href="../../public.css">
-<style>
-
-	.banner {
-		height: 30px;
-		background-color: #222;
-		clear: both;
-	}
-	.main {
-		clear: both;
-		background-color: #fff;
-	}
-	.main-inner {
-		margin: 0 auto;
-		width: 1000px;
-	}
-	.first {
-		margin: 0 auto;
-		width: 500px;
-		padding: 100px;
-	}
-	.first h1 {
-		font-size: 24px;
-		text-align: center;
-		margin: 30px 0;
-	}
-	.box {
-		box-shadow: 0 0 10px gray;
-		background-color: #fff; 
-		margin: auto; 
-		width: 200px; 
-		height: 200px;
-	}
-</style>
+	<link rel="stylesheet" href="1st.css">
 </head>
 <body>
 		<header>
@@ -57,13 +25,25 @@
 		<div class="main clearfix">
 			<div class="main-inner clearfix">
 				<div class="first">
-					<h1>box-shadow示例</h1>
+					<h1 class="center">box-shadow示例</h1>
 					  <div class="box"></div>
+				</div>
+				<div class="first">
+					<h1>css代码如下：</h1>
+					<p>
+							.box {<br>
+							&nbsp;&nbsp;box-shadow: 0 0 15px black;<br>
+							&nbsp;&nbsp;background-color: #fff; <br>
+							&nbsp;&nbsp;margin: auto; <br>
+							&nbsp;&nbsp;width: 200px; <br>
+							&nbsp;&nbsp;height: 200px;<br>
+							}
+					</p>
 				</div>
 			</div>
 		</div>
 		<footer class="clearfix">
-			<div class="footer-inner">
+			<div class="footer-inner clearfix">
 				<p>design by <a href="">mystage930423.github.io</a></p>
 			</div>
 		</footer>

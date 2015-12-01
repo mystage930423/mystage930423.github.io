@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3rd day:transition (1)</title>
+  <link rel="stylesheet" href="../../public.css"> 
+  <link rel="stylesheet" href="3rd.css">
+</head>
+<body>
+      <header>
+      <div class="header-inner">
+        <div class="logo">
+          <img src="" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li><a class="home" href="/"><img src="../../images/home.png" alt="home"></a></li>
+            <li><a class="bai" href="/100days"><img src="../../images/bai.png" alt="百日百页面"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner clearfix"></div>
+    <div class="main clearfix">
+      <div class="main-inner clearfix">
+        <div class="third">
+          <h1 class="center">过渡效果①示例：</h1>
+          <h1 class="size">(鼠标经过小球，小球在盒子内滑动)</h1>
+            <div class="box clearfix">
+            <div class="ball"></div></div>      
+        </div>
+        <div class="third">
+          <h1>css代码如下：</h1>
+          <p>
+            .box {<br>
+            &nbsp;&nbsp;width: 200px;<br>
+            &nbsp;&nbsp;height: 200px;<br><br>
+            &nbsp;&nbsp;background-color: #000;<br>
+          }
+          </p>
+          <p>
+            .ball {<br>
+            &nbsp;&nbsp;width: 50px;<br>
+            &nbsp;&nbsp;height: 50px;<br>
+            &nbsp;&nbsp;background-color: #fff;<br> 
+            &nbsp;&nbsp;border-radius: 25px;<br>
+            &nbsp;&nbsp;transition: margin 2s ease;<br>
+          }
+          </p>
+          <p>
+            .ball:hover { <br>
+            &nbsp;&nbsp;margin: 50px;<br>
+          }
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="clearfix">
+      <div class="footer-inner">
+        <p>design by <a href="">mystage930423.github.io</a></p>
+      </div>
+    </footer>
+
+</body>
+</html>
