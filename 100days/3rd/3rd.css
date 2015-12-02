@@ -20,37 +20,4 @@
   }
   .third h1 {
     font-size: 24px;    
-    margin: 30px 0;
-  }
-  .third p {
-    padding: 15px;
-    width: 300px;
-    background-color: #222;
-    color: #eee;
-  }
-  .third .center {
-    text-align: center;
-  }
-  .third .size {
-    text-align: center;
-    font-size: 20px;
-  } 
-
-  .box {
-    margin: 0 auto;
-     width: 200px;
-     height: 200px;
-     background-color: #000;
-}
-
-.ball {
-  width: 50px;
-  height: 50px;
-  background-color: #fff; 
-  border-radius: 25px;
-  transition: margin 2s ease;
-}
-
-.ball:hover {
-  margin: 35%;
-}
+    margin: 50px 0;

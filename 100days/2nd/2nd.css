@@ -14,33 +14,9 @@
 	}
 	.second {
 		margin: 0 auto;
-		width: 400px;
+		width: 900px;
 		padding: 50px;
-		float: left;
 	}
 	.second h1 {
 		font-size: 24px;		
-		margin: 30px 0;
-	}
-	.second p {
-		padding: 15px;
-		width: 300px;
-		background-color: #222;
-		color: #eee;
-	}
-	.second .center {
-		text-align: center;
-	}
-	.box {
-		display: block;
-		box-shadow: 0 0 15px Aqua;
-		background-color: #fff; 
-		margin:0 auto; 
-		width: 200px; 
-		height: 200px;
-		border-radius: 10px;
-		transition: border-radius 2s;
-	}
-	.box:hover {
-		border-radius: 50%;
-	}
+		margin: 50px 0;

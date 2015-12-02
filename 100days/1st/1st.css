@@ -15,27 +15,11 @@
 
 
 	.first {
-		float: left;
+		margin: 0 auto;
 		width: 440px;
 		padding: 30px;
 	}
 	.first h1 {
 		font-size: 24px;
-		margin: 30px 0;
-	}
-	.first .center {
-		text-align: center;
-	}
-	.first p {
-		padding: 15px;
-		width: 300px;
-		background-color: #222;
-		color: #eee;
-	}
-	.box {
-		box-shadow: 0 0 15px black;
-		background-color: #fff; 
-		margin: auto; 
-		width: 200px; 
-		height: 200px;
+		margin: 50px 0;
 	}
