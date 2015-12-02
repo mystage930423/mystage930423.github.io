@@ -13,7 +13,6 @@
 		width: 1000px;
 	}
 
-    /*因为first盒子浮动造成main高度不能自适应，解决不掉*/
 
 	.first {
 		float: left;
