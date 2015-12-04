@@ -19,7 +19,7 @@
 body {
 	background-color: #e5e5e5;
 }
-h1 {
+h1, p {
 	font-family: arial "幼圆";
 }
 a {
@@ -79,7 +79,6 @@ footer {
 }
 .footer-inner p {
 	line-height: 100px;
-	font-family: arial;
 }
 .footer-inner a {
 	color: #555;

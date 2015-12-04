@@ -16,10 +16,14 @@
 
 	.first {
 		margin: 0 auto;
-		width: 440px;
+		width: 800px;
 		padding: 30px;
 	}
 	.first h1 {
 		font-size: 24px;
 		margin: 50px 0;
+	}
+
+	.first p {
+		margin: 30px 0;
 	}
