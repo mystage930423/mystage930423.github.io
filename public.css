@@ -65,7 +65,7 @@ nav li .bai:hover {
 	background: url(images/bai_bg.png) no-repeat;
 }
 nav li .home:hover {
-	background: url(images/home_bg.png);
+	background: url(images/home_bg.png) no-repeat;
 }
 
 
