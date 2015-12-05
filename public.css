@@ -5,6 +5,19 @@
 .clearfix:after{clear: both;}
 .clearfix {zoom:1;}
 
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft.eot');
+    src: url('minecraft.eot?#iefix') format('embedded-opentype'),
+         url('minecraft.woff2') format('woff2'),
+         url('minecraft.woff') format('woff'),
+         url('minecraft.ttf') format('truetype'),
+         url('minecraft.svg#minecraftmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*.clearfix:before, .clearfix:after { content: " "; display: table; }
 
 .clearfix:after {
@@ -20,7 +33,7 @@ body {
 	background-color: #e5e5e5;
 }
 h1, p {
-	font-family: arial "幼圆";
+	font-family: 'minecraftmedium' "幼圆";
 }
 a {
 	text-decoration: none;
