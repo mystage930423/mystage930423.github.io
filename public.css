@@ -89,6 +89,7 @@ footer {
 	width: 1000px;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 20px;
 }
 .footer-inner p {
 	line-height: 100px;
