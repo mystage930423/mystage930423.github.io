@@ -33,7 +33,7 @@ body {
 	background-color: #e5e5e5;
 }
 h1, p {
-	font-family: 'minecraftmedium' "幼圆";
+	font-family:arial "幼圆";
 }
 a {
 	text-decoration: none;
@@ -90,6 +90,7 @@ footer {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 20px;
+	font-family: 'minecraftmedium';
 }
 .footer-inner p {
 	line-height: 100px;
