@@ -7,51 +7,6 @@
 	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
 	<link rel="stylesheet" href="public.css">
 	<style>
-
-	.box {
-	 	width: 50%;
-	  	height: 100%;
-	  	transition:transform 1s;
-	}
-	.box.left {
-	  background-color: forestgreen;
-			position: fixed;
-			left: 0;
-			z-index: 4;
-	}
-	.circle {
-		width: 120px;
-		height: 120px;
-		background-color: forestgreen;
-		border-radius: 50%;
-		position: absolute;
-		right:-60px;
-		top: 40%;
-		z-index: 5;
-		border: 5px solid forestgreen;
-		transition-delay:1s;
-	}
-	.circle.move {
-		transform:translateX(-100%);
-	}
-	.circle img {
-		width: 110px;
-		height: 110px;
-		border-radius: 50%;
-		border: 5px solid orangered;
-	}
-	.box.right {
-	  background-color: orangered;
-	 		position: fixed;
-	 		right: 0;
-	 		z-index: 3;
-	}
-	.box.left.move {
-	  transform: translateX(-100%);
-	}
-	.box.right.move {
-	  transform: translateX(100%);
-	}
     .banner {
 		width: 100%;
 		height: 540px;
@@ -73,13 +28,7 @@
 	</style>
 </head>
 <body>
-	<div class="box left">
-		<div class="box circle">
-			<img src="images/tree.gif">
-		</div>
-	</div>
-	<div class="box right"></div>
-		<nav role='navigation'>
+	<nav role='navigation'>
 	  <ul>
 	    <li><a href="myindex.html">HOME</a></li>
 	    <li><a href="#">WORKS</a>
@@ -95,6 +44,7 @@
 	<div class="banner clearfix">
 	  	<div class="banner-inner">
 	  		<img src="images/doge.png" alt="hello doge">
+	  		
 	  	</div>
 	</div>
 	<footer class="clearfix">
@@ -102,11 +52,5 @@
 			<p>design by <a href="https://github.com/mystage930423">MY·STAGE</a></p>
 		</div>
 	</footer>
-<!-- |Script| -->
-	<script>
-		$('.circle').click(function(){
-		  $('.box').addClass('move');
-		});
-	</script>
 </body>
 </html>
