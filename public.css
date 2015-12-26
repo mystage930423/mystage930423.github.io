@@ -1,101 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
 
-*{margin: 0; padding: 0;}
-
-.clearfix:before,.clearfix:after{display: table; content:"";}
-.clearfix:after{clear: both;}
-.clearfix {zoom:1;}
-
-@font-face {
-    font-family: 'minecraftmedium';
-    src: url('minecraft.eot');
-    src: url('minecraft.eot?#iefix') format('embedded-opentype'),
-         url('minecraft.woff2') format('woff2'),
-         url('minecraft.woff') format('woff'),
-         url('minecraft.ttf') format('truetype'),
-         url('minecraft.svg#minecraftmedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+*, *:before, *:after{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	padding: 0;
+  	margin: 0;
+  	font-family: arial, "黑体";
+    text-decoration: none;
 }
-
-/*.clearfix:before, .clearfix:after { content: " "; display: table; }
-
+.clearfix:before, .clearfix:after { 
+	content: " "; 
+	display: table; 
+}
 .clearfix:after {
     clear: both;
 }
-
 .clearfix {
     *zoom: 1;
-}*/
-
-/*-----public-----*/
-body {
-	background-color: #e5e5e5;
 }
-h1, p {
-	font-family:arial "幼圆";
-}
-a {
-	text-decoration: none;
+a:hover {
+    color:white;
+    transition:color .2s ease-in-out;
 }
 
 
-/*-----header------*/
-.header-inner {
-	width: 1000px; 
-	margin: 0 auto;
-}
-.logo {
-	float: left;
-}
+/*-----| Navigation |-----*/
+
 nav{
-	margin-right: 90px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 3px 10px -2px rgba(0,0,0,.2); 
+    transition: all .5s ease;	
 }
-nav li {
-	float: right;
-	width: 76px;
-	height: 60px; 
-	margin: 10px;
-	list-style: none;
+nav ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
 }
-nav li a {
+nav ul li{
+    float: left;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li:hover {
+	background-color: orange;
+}
+nav ul li:hover > ul{
 	display: block;
 }
-nav li .bai:hover {
-	background: url(images/bai_bg.png) no-repeat;
+nav ul li{
+    float: left;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
-nav li .home:hover {
-	background: url(images/home_bg.png) no-repeat;
+    nav ul li a{
+    display: block; 
+    padding: 30px 20px;
+    color: #333; 
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+    nav ul ul{
+    display: none;
+    background: #fff;
+    position: absolute; 
+    top: 100%;
+    box-shadow: -3px 3px 10px -2px rgba(0,0,0,.2);
+}
+nav ul ul li{
+	float: none; 
+	position: relative;
+}
+nav ul ul li a {
+    padding: 15px 30px; 
+}
+nav ul ul ul {
+    position: absolute; 
+    left: 100%; 
+    top:0;
+}	
+
+/*-----| Banner |-----*/
+
+.banner {
+    background-color: #eee;
 }
 
+/*-----|Footer|-----*/
 
-
-/*-----main-----*/
-.main {
-	clear: both;
-}
-.main-inner {
-	clear: both;
-}
-
-
-
-/*-----footer-----*/
 footer {
-	clear: both;
+    width: 100%;
+    background-color: #fff;
 }
 .footer-inner {
-	clear: both;
-	width: 1000px;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 20px;
-}
-.footer-inner p {
-	line-height: 100px;
-	font-family: 'minecraftmedium';
-}
-.footer-inner a {
-	color: #555;
-	font-family: 'minecraftmedium';
+    margin:0 auto;
+    line-height: 100px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    font-weight: bold;
 }

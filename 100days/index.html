@@ -3,10 +3,64 @@
 <head>
 	<meta charset="UTF-8">
 	<title>百日百页面</title>
+	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" href="../public.css" />
-	<link rel="stylesheet" href="index.css">
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style> 
+	body {
+		background-image: url(../images/days_bg.jpg);
+		background-size: cover;
+	}
+	.main {
+		clear: both;
+	}  
+	.main-inner {
+		margin: 0 auto;
+		width: 80%;
+	}
+	.list {
+		padding: 100px;
+		text-align: center;
+	}
+	.list h1{
+		width: 90%;
+		margin: 30px auto;
+		font-family:'Roboto';
+	    font-weight: 300;
+    	color: #171717;
+    	font-size: 3em;
+    	background: rgba(255,255,255,.3);
+    	padding: 50px 0;
+	}
+	.main-inner a {
+		color: #fff;
+		font-size: 20px;		
+		font-family:'Roboto', "幼圆" ;
+		font-weight: 300;
+	}
+	.main-inner li {
+		list-style: none;
+		margin-bottom: 12px;
+		padding-left: 20px;
+		background: url(../images/list.png) no-repeat;
+	}
+	.top {
+		display: none;
+		position: fixed;
+		right: 5%;
+		top: 75%;
+		color: rgba(255,255,255,.4);
+		padding: 10px;
+		border: 2px solid rgba(255,255,255,.6);
+		border-radius: 20%;
+	}
+	.top.add {
+		display: block;
+	}
+</style>
 </head>
-<body>
+	<body>
 		<header>
 			<div class="header-inner">
 				<div class="logo">
@@ -14,32 +68,114 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a class="home" href="/"><img src="../images/home.png" alt="home"></a></li>
-						<li><a class="bai" href="/100days"><img src="../images/bai.png" alt="百日百页面"></a></li>
+						<li><a href="../myindex.html">HOME</a></li>
+					    <li><a href="#">WORKS</a>
+					      <ul>
+					        <li><a href="#">WEBSITE</a></li>
+					        <li><a href="#">PAINTING</a></li>
+					      </ul>
+					    </li>
+					    <li><a href="../100days/index.html">KISS</a></li>
+					    <li><a href="#">DATA</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<div class="banner clearfix"></div>
 		<div class="main clearfix">
 			<div class="main-inner clearfix">
 				<div class="list">
-					<h1>代码如画笔·百日百页面</h1>
+					<h1>Keep It Simple & Stupid</h1>
 					<ul>
-						<li><a href="1st/1st.html">1st day:box-shadow</a></li>
-						<li><a href="2nd/2nd.html">2nd day:border-radius</a></li>
-						<li><a href="3rd/3rd.html">3rd day:transition (1)</a></li>
-						<li><a href="4th/4th.html">4th day:transition (2)</a></li>
-						<li><a href="5th/5th.html">5th day:position</a></li>
-						<li><a href="6th/6th.html">6th day:clearfix</a></li>
+						<li><a href="1st/1st.html">1st day:box-shadow的各种设置</a></li>
+						<li><a href="2nd/2nd.html">2nd day:border-radius,会动</a></li>
+						<li><a href="3rd/3rd.html">3rd day:transition (1) 位移</a></li>
+						<li><a href="4th/4th.html">4th day:transition (2) 阴影过渡</a></li>
+						<li><a href="5th/5th.html">5th day:position 绝对定位的使用</a></li>
+						<li><a href="6th/6th.html">6th day:clearfix的应用</a></li>
+						<li><a href="7th/7th.html">7th day:box-sizing:border-box</a></li>
+						<li><a href="8th/8th.html">8th day:webfont自定义font-face</a></li>
+						<li><a href="9th/9th.html">9th day:material design材料设计色盘</a></li>
+						<li><a href="10th/10th.html">10th day:@media query之响应式三栏</a></li>
+						<li><a href="11th/11th.html">11th day:@media query之导航栏转换</a></li>
+						<li><a href="12th/12th.html">12th day:transform:translate的应用</a></li>
+						<li><a href="13th/13th.html">13th day:字体图标的应用</a></li>
+						<li><a href="14th/14th.html">14th day:click事件之alert弹窗</a></li>
+						<li><a href="15th/15th.html">15th day:click事件之点击变色</a></li>
+						<li><a href="16th/16th.html">16th day:click事件之侧边导航栏滑动</a></li>
+						<li><a href="17th/17th.html">17th day:一个关于滑动的demo (1)</a></li>
+						<li><a href="18th/18th.html">18th day:一个关于滑动的demo (2)</a></li>
+						<li><a href="19th/19th.html">19th day:背景色--颜色渐变设置</a></li>
+						<li><a href="20th/20th.html">20th day:响应式:viewport的应用</a></li>
+						<li><a href="21th/21th.html">21th day:</a></li>
+						<li><a href="22th/22th.html">22th day:</a></li>
+						<li><a href="23th/23th.html">23th day:</a></li>
+						<li><a href="24th/24th.html">24th day:</a></li>
+						<li><a href="25th/25th.html">25th day:</a></li>
+						<li><a href="26th/26th.html">26th day:</a></li>
+						<li><a href="27th/27th.html">27th day:</a></li>
+						<li><a href="28th/28th.html">28th day:</a></li>
+						<li><a href="29th/29th.html">29th day:</a></li>
+						<li><a href="30th/30th.html">30th day:</a></li>
+						<li><a href="31th/31th.html">31th day:</a></li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
+		<a class="top" href="#">TOP</a>
 		<footer class="clearfix">
 			<div class="footer-inner">
 				<p>design by <a href="https://github.com/mystage930423">MY·STAGE</a></p>
 			</div>
 		</footer>
-</body>
+	<script>
+		var didScroll;
+		var lastScrollTop = 0;
+		var delta = 5;
+		var navbarHeight = $('nav').outerHeight();
+		$(window).scroll(function(event){
+		    didScroll = true;
+		});
+		setInterval(function() {
+		    if (didScroll) {
+		        hasScrolled();
+		        didScroll = false;
+		    }
+		}, 0);
+		function hasScrolled() {
+		    var st = $(this).scrollTop();
+
+		    if(Math.abs(lastScrollTop - st) <= delta)
+		        return;
+		    
+		    if (st > lastScrollTop && st > navbarHeight){
+
+		        $('nav').css("top", -navbarHeight);
+		    } else { 
+
+		        if(st + $(window).height() < $(document).height()) {
+		            $('nav').css("top", "0px");
+		        }
+		    }    
+		    lastScrollTop = st;
+		}
+	</script>
+	<script>
+		$(function(){
+			$(window).scroll(function(){
+				$('.top').addClass('.add');
+				var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+				if( scrollt >250 ){
+					$('.top').fadeIn(400);   
+				}
+			else {      
+				$('.top').stop().fadeOut(400);
+			}
+		});
+		$('.top').click(function(){
+			$("html,body").animate({scrollTop:"0px"},200);
+			});
+		});
+	</script>
+	</body>
 </html>
