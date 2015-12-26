@@ -2,111 +2,46 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width" />
-	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+	<title>welcome to my stage!</title>
+	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="public.css">
-	<style>
-
-	.box {
-	 	width: 50%;
-	  	height: 100%;
-	  	transition:transform 1s;
-	}
-	.box.left {
-	  background-color: forestgreen;
-			position: fixed;
-			left: 0;
-			z-index: 4;
-	}
-	.circle {
-		width: 120px;
-		height: 120px;
-		background-color: forestgreen;
-		border-radius: 50%;
-		position: absolute;
-		right:-60px;
-		top: 40%;
-		z-index: 5;
-		border: 5px solid forestgreen;
-		transition-delay:1s;
-	}
-	.circle.move {
-		transform:translateX(-100%);
-	}
-	.circle img {
-		width: 110px;
-		height: 110px;
-		border-radius: 50%;
-		border: 5px solid orangered;
-	}
-	.box.right {
-	  background-color: orangered;
-	 		position: fixed;
-	 		right: 0;
-	 		z-index: 3;
-	}
-	.box.left.move {
-	  transform: translateX(-100%);
-	}
-	.box.right.move {
-	  transform: translateX(100%);
-	}
-    .banner {
-		width: 100%;
-		height: 540px;
-		background-image: url(images/banner_bg.jpg);
-		background-size: cover;
-    }
-    .banner-inner　{
-    	width: 80%;
-    	margin:0 auto;
-    }
-    .banner-inner img {
-    	margin-top:150px;
-    	margin-left: auto;
-    	margin-right: auto;
-    	display: block;
-    	border-radius: 50%;
-    	border: 5px solid white;
-    }
-	</style>
 </head>
 <body>
-	<div class="box left">
-		<div class="box circle">
-			<img src="images/tree.gif">
+		<header>
+			<div class="header-inner">
+				<div class="logo">
+					<img src="" alt="">
+				</div>
+				<nav>
+					<ul>
+						<li><a class="home" href="/"><img src="images/home.png" alt="home"></a></li>
+						<li><a class="bai" href="/100days"><img src="images/bai.png" alt="百日百页面"></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="banner clearfix">
+			<div class="banner-inner">
+				<img src="images/my-web.gif" alt="my stage">
+			</div>
 		</div>
-	</div>
-	<div class="box right"></div>
-		<nav role='navigation'>
-	  <ul>
-	    <li><a href="myindex.html">HOME</a></li>
-	    <li><a href="#">WORKS</a>
-	      <ul>
-	        <li><a href="#">WEBSITE</a></li>
-	        <li><a href="#">PAINTING</a></li>
-	      </ul>
-	    </li>
-	    <li><a href="100days/index.html">KISS</a></li>
-	    <li><a href="#">DATA</a></li>
-	  </ul>
-	</nav>
-	<div class="banner clearfix">
-	  	<div class="banner-inner">
-	  		<img src="images/doge.png" alt="hello doge">
-	  	</div>
-	</div>
-	<footer class="clearfix">
-		<div class="footer-inner">
-			<p>design by <a href="https://github.com/mystage930423">MY·STAGE</a></p>
+		<div class="main clearfix">
+			<div class="main-inner">
+				<div class="100days">
+					<a href=""></a>
+				</div>
+				<div class="works">
+					<a href=""></a>
+				</div>
+				<div class="material">
+					<a href=""></a>
+				</div>
+			</div>
 		</div>
-	</footer>
-<!-- |Script| -->
-	<script>
-		$('.circle').click(function(){
-		  $('.box').addClass('move');
-		});
-	</script>
+		<footer class="clearfix">
+			<div class="footer-inner">
+				<p>design by <a href="https://github.com/mystage930423">MY·STAGE</a></p>
+			</div>
+		</footer>
 </body>
 </html>
