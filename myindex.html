@@ -10,7 +10,7 @@
     .banner {
 		width: 100%;
 		height: 540px;
-		background-image: url(images/banner_bg.jpg);
+		background-image: url(images/banner_bg.jpg);  
 		background-size: cover;
     }
     .banner-inner　{
@@ -18,16 +18,37 @@
     	margin:0 auto;
     }
     .banner-inner img {
-    	margin-top:150px;
+    	margin-top:50px;
     	margin-left: auto;
     	margin-right: auto;
     	display: block;
     	border-radius: 50%;
     	border: 5px solid white;
+    	transition:margin-top 1.5s ease;
+    }
+    .banner-inner h1{
+    	text-align: center;
+    	margin-top: 50px;
+    }
+    @media (min-width: 550px) {
+    	.banner-inner img{
+    		margin-top: 150px;
+    	}
     }
 	</style>
 </head>
 <body>
+	<div class="sidebar">
+		<a class='nav-icon'>
+			<div class='burger'></div>
+		</a>		
+		<ul>
+		    <li><a href="myindex.html">HOME</a></li>
+		    <li><a href="#">WORKS</a></li>
+		    <li><a href="100days/index.html">KISS</a></li>
+		    <li><a href="#">DATA</a></li>
+		</ul>
+	</div>
 	<nav role='navigation'>
 	  <ul>
 	    <li><a href="myindex.html">HOME</a></li>
@@ -44,7 +65,7 @@
 	<div class="banner clearfix">
 	  	<div class="banner-inner">
 	  		<img src="images/doge.png" alt="hello doge">
-	  		
+	  		<h1>Welcome to my STAGE</h1>
 	  	</div>
 	</div>
 	<footer class="clearfix">
@@ -52,5 +73,15 @@
 			<p>design by <a href="https://github.com/mystage930423">MY·STAGE</a></p>
 		</div>
 	</footer>
+<script>
+	$('.nav-icon').click(function(){
+		$('.sidebar').toggleClass('move');
+	});
+	(function () {
+    $('.nav-icon').on('click', function () {
+        return $(this).toggleClass('open');
+    });
+}.call(this));
+</script>
 </body>
 </html>

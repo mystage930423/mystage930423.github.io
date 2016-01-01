@@ -17,11 +17,15 @@
 	}  
 	.main-inner {
 		margin: 0 auto;
-		width: 80%;
 	}
 	.list {
-		padding: 100px;
+		padding: 50px 0;
 		text-align: center;
+	}
+	@media (min-width: 550px){
+		.list {
+			padding:100px 0;
+		}
 	}
 	.list h1{
 		width: 90%;
@@ -29,15 +33,38 @@
 		font-family:'Roboto';
 	    font-weight: 300;
     	color: #171717;
-    	font-size: 3em;
+    	font-size: 2em;
     	background: rgba(255,255,255,.3);
-    	padding: 50px 0;
+    	padding:40px 20px;
+	}
+	@media (min-width: 550px){
+		.list h1 {
+			width: 85%;
+			font-size: 2.5em;
+		}
+	}
+	@media (min-width: 960px){
+		.list h1 {
+			width: 70%;
+			font-size: 3em;
+			padding: 50px 0;
+		}
 	}
 	.main-inner a {
 		color: #fff;
-		font-size: 20px;		
+		font-size: 16px;		
 		font-family:'Roboto', "幼圆" ;
 		font-weight: 300;
+	}
+	@media (min-width: 550px){
+		.main-inner a {
+			font-size: 20px;
+		}
+	}
+	@media (min-width: 960px){
+		.main-inner a {
+			font-size: 24px;
+		}
 	}
 	.main-inner li {
 		list-style: none;
@@ -66,7 +93,18 @@
 				<div class="logo">
 					<img src="" alt="">
 				</div>
-				<nav>
+				<div class="sidebar">
+					<a class='nav-icon'>
+						<div class='burger'></div>
+					</a>		
+					<ul>
+					    <li><a href="../myindex.html">HOME</a></li>
+					    <li><a href="#">WORKS</a></li>
+					    <li><a href="../100days/index.html">KISS</a></li>
+					    <li><a href="#">DATA</a></li>
+					</ul>
+				</div>
+				<nav role='navigation'>
 					<ul>
 						<li><a href="../myindex.html">HOME</a></li>
 					    <li><a href="#">WORKS</a>
@@ -106,8 +144,8 @@
 						<li><a href="18th/18th.html">18th day:一个关于滑动的demo (2)</a></li>
 						<li><a href="19th/19th.html">19th day:背景色--颜色渐变设置</a></li>
 						<li><a href="20th/20th.html">20th day:响应式:viewport的应用</a></li>
-						<li><a href="21th/21th.html">21th day:</a></li>
-						<li><a href="22th/22th.html">22th day:</a></li>
+						<li><a href="21th/21th.html">21th day:z-index的应用</a></li>
+						<li><a href="22th/22th.html">22th day:兼容之如何加厂商前缀</a></li>
 						<li><a href="23th/23th.html">23th day:</a></li>
 						<li><a href="24th/24th.html">24th day:</a></li>
 						<li><a href="25th/25th.html">25th day:</a></li>
@@ -177,5 +215,15 @@
 			});
 		});
 	</script>
+	<script>
+	$('.nav-icon').click(function(){
+		$('.sidebar').toggleClass('move');
+	});
+	(function () {
+    $('.nav-icon').on('click', function () {
+        return $(this).toggleClass('open');
+    });
+}.call(this));
+</script>
 	</body>
 </html>
