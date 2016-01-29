@@ -88,7 +88,20 @@ h1 {
     left: 100%; 
     top:0;
 }   
-
+.home-icon {
+  position: fixed;
+  right: 8px;
+  top: 8px;
+}
+@media (min-width: 550px) {
+  .home-icon {
+    display: none;
+  }
+}
+.home-icon img {
+  height: 24px;
+  width: 24px;
+}
 .nav-icon {
   outline: none;
   display: block;
