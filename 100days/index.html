@@ -151,7 +151,7 @@
 						<li><a href="20th/20th.html">20th day:响应式:viewport的应用</a></li>
 						<li><a href="21th/21th.html">21th day:z-index的应用</a></li>
 						<li><a href="22th/22th.html">22th day:兼容之如何加厂商前缀</a></li>
-						<li><a href="23th/23th.html">23th day:</a></li>
+						<li><a href="23th/23th.html">23th day:一个小栗子</a></li>
 						<li><a href="24th/24th.html">24th day:</a></li>
 						<li><a href="25th/25th.html">25th day:</a></li>
 						<li><a href="26th/26th.html">26th day:</a></li>
@@ -202,13 +202,12 @@
 		    }    
 		    lastScrollTop = st;
 		}
-	</script>
-	<script>
+
 		$(function(){
 			$(window).scroll(function(){
 				$('.top').addClass('.add');
 				var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
-				if( scrollt >250 ){
+				if( scrollt >200 ){
 					$('.top').fadeIn(400);   
 				}
 			else {      

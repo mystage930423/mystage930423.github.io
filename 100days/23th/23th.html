@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	.btn {
+		float: left;
+		list-style: none;
+		background-color: #fff;
+	}
+	.btn.color {
+		background-color: red;
+	}
+	.btn:hover {
+		cursor:pointer;
+	}
+	img {
+		width: 300px;
+		height: 200px;
+	}
+</style>
+</head>
+<body>
+<img class="pic" src="images/1.jpg" >
+	<div class="list">
+		<ul>
+			<li class="btn">[1]</li>
+			<li class="btn">[2]</li>
+			<li class="btn">[3]</li>
+			<li class="btn">[4]</li>
+		</ul>
+	</div>
+<script src="jquery-1.11.1.js"></script>
+<script>
+	$(".btn").click(function(){
+		var index = $(this).index();
+		var src = "images/" + (index+1) + ".jpg";
+		$(".pic").attr("src",src);
+		$(this).addClass("color");
+		$(this).siblings().removeClass("color");
+		//同等级的其他元素.siblings()
+	})
+
+	// $("#btn-1").click(function(){
+	// 	$(".pic").attr("src","images/1.jpg");
+	// 	$("#btn-1").addClass("color");
+	// 	$("#btn-2").removeClass("color");
+	// 	$("#btn-3").removeClass("color");
+	// 	$("#btn-4").removeClass("color");
+	// })
+	// $("#btn-2").click(function(){
+	// 	$(".pic").attr("src","images/2.jpg");
+	// 	$("#btn-1").removeClass("color");
+	// 	$("#btn-2").addClass("color");
+	// 	$("#btn-3").removeClass("color");
+	// 	$("#btn-4").removeClass("color");
+	// })
+	// $("#btn-3").click(function(){
+	// 	$(".pic").attr("src","images/3.jpg");
+	// 	$("#btn-1").removeClass("color");
+	// 	$("#btn-2").removeClass("color");
+	// 	$("#btn-3").addClass("color");
+	// 	$("#btn-4").removeClass("color");
+	// })	
+	// $("#btn-4").click(function(){
+	// 	$(".pic").attr("src","images/4.jpg");
+	// 	$("#btn-1").removeClass("color");
+	// 	$("#btn-2").removeClass("color");
+	// 	$("#btn-3").removeClass("color");
+	// 	$("#btn-4").addClass("color");
+	// })	
+</script>	
+</body>
+</html>
